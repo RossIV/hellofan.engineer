@@ -1,75 +1,75 @@
 #!/bin/bash
 printf "\e[2J"
 printf "\033c"
-echo "I'm a Ramblin' Wreck from Georgia Tech"
+printf "I'm a Ramblin' Wreck from Georgia Tech\r\n"
 sleep 2.0
-echo "and a hell of an engineer—"
+printf "and a hell of an engineer—\r\n"
 sleep 1.5
-echo "A helluva,"
+printf "A helluva,\r\n"
 sleep 0.4
-echo "helluva,"
+printf "helluva,\r\n"
 sleep 0.4
-echo "helluva,"
+printf "helluva,\r\n"
 sleep 0.4
-echo "helluva,"
+printf "helluva,\r\n"
 sleep 0.4
-echo "hell of an engineer."
+printf "hell of an engineer.\r\n"
 sleep 1.75
-echo "Like all the jolly good fellows,"
+printf "Like all the jolly good fellows,\r\n"
 sleep 1.5
-echo "I drink my whiskey clear."
+printf "I drink my whiskey clear.\r\n"
 sleep 1.75
-echo "I'm a Ramblin' Wreck from Georgia Tech"
+printf "I'm a Ramblin' Wreck from Georgia Tech\r\n"
 sleep 1.75
-echo "and a hell of an engineer."
+printf "and a hell of an engineer.\r\n"
 sleep 1.75
-echo "Oh! If I had a daughter, sir,"
+printf "Oh! If I had a daughter, sir,\r\n"
 sleep 1.5
-echo "I'd dress her in White and Gold,"
+printf "I'd dress her in White and Gold,\r\n"
 sleep 1.5
-echo "And put her on the campus"
+printf "And put her on the campus\r\n"
 sleep 1.7
-echo "to cheer the brave and bold."
+printf "to cheer the brave and bold.\r\n"
 sleep 1.5
-echo "But if I had a son, sir, "
+printf "But if I had a son, sir, \r\n"
 sleep 1.75
-echo "I'll tell you what he'd do—"
+printf "I'll tell you what he'd do—\r\n"
 sleep 1.6
-echo "He would yell, 'To hell with georgia!'"
+printf "He would yell, 'To hell with georgia!'\r\n"
 sleep 1.5
-echo "like his daddy used to do."
+printf "like his daddy used to do.\r\n"
 sleep 1.75
-echo "Oh, I wish I had a barrel of rum"
+printf "Oh, I wish I had a barrel of rum\r\n"
 sleep 1.5
-echo "and sugar three thousand pounds,"
+printf "and sugar three thousand pounds,\r\n"
 sleep 1.5
-echo "A college bell to put it in"
+printf "A college bell to put it in\r\n"
 sleep 1.75
-echo "and a clapper to stir it round."
+printf "and a clapper to stir it round.\r\n"
 sleep 1.5
-echo "I'd drink to all the good fellows"
+printf "I'd drink to all the good fellows\r\n"
 sleep 1.5
-echo "who come from far and near."
+printf "who come from far and near.\r\n"
 sleep 1.6
-echo "I'm a ramblin', gamblin',"
+printf "I'm a ramblin', gamblin',\r\n"
 sleep 2
-echo "hell of an engineer!"
+printf "hell of an engineer!\r\n"
 sleep 3.5
-echo "Go Jackets!"
+printf "Go Jackets!\r\n"
 sleep 3
-echo "Go Jackets!"
+printf "Go Jackets!\r\n"
 sleep 3.5
-echo "Go Jackets!"
+printf "Go Jackets!\r\n"
 sleep 3
-echo "Go Jackets!"
+printf "Go Jackets!\r\n"
 sleep 1.5
-echo "Fight, Drink, Win, Get Naked!"
+printf "Fight, Drink, Win, Get Naked!\r\n"
 sleep 2
-echo ""
-echo ""
+printf ""
+printf ""
 ls *_ascii.txt |sort -R |tail -1 |while read file; do
-    cat $file
+    while read LINE; do echo "$LINE" < $file
 done
-echo ""
-echo ""
-echo ""
+printf ""
+printf ""
+printf ""
