@@ -68,7 +68,7 @@ sleep 2
 printf ""
 printf ""
 ls *_ascii.txt |sort -R |tail -1 |while read file; do
-    while read LINE; do echo "$LINE" < $file
+    while read LINE; do echo "$LINE"; done < $file
 done
 printf ""
 printf ""
