@@ -67,5 +67,9 @@ echo "Fight, Drink, Win, Get Naked!"
 sleep 2
 echo ""
 echo ""
-cat gt_ascii.txt
-
+ls *_ascii.txt |sort -R |tail -1 |while read file; do
+    cat $file
+done
+echo ""
+echo ""
+echo ""
