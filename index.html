@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>hellofan.engineer</title>
+<style type="text/css">
+.fTelnetStatusBar {
+    display: none; !important
+}
+body {
+    background: #000000;
+}
+</style>
+</head>
+<body>
+<div id="fTelnetContainer"></div>
+<!-- Looks weird, but this ensures your users always get the latest version of fTelnet and not an old version from their cache -->
+<script>document.write('<script src="//embed.ftelnet.ca/js/ftelnet-loader.js?v=' + (new Date()).getTime() + '"><\/script>');</script>
+<script>
+    fTelnet.Hostname = "hellofan.engineer";
+    fTelnet.Port = 23;
+    fTelnet.ProxyHostname = "proxy-us-ga.ftelnet.ca";
+    fTelnet.ProxyPort = 80;
+    fTelnet.ProxyPortSecure = 443;
+    fTelnet.ConnectionType = "telnet";
+    fTelnet.Emulation = "ansi-bbs";
+    fTelnet.VirtualKeyboardVisible = false;
+    fTelnet.Init();
+    fTelnet.Connect();
+</script>
+</body>
+<html>
